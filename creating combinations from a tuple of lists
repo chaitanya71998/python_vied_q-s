@@ -1,0 +1,18 @@
+class IceCreamMachine:
+    
+    def __init__(self, ingredients, toppings,lol):
+        self.ingredients = ingredients
+        self.toppings = toppings
+        self.lol = lol
+        
+    def scoops(self):
+        res = []
+        for i in self.ingredients:
+            for j in self.toppings:
+                for k in self.lol:
+                    res.append([i,j,k])
+        return res
+                
+
+machine = IceCreamMachine(["vanilla", "chocolate","dasd"], ["chocolate sauce","asddggg"],["sdfgsdfgg"])
+print(machine.scoops()) #should print[['vanilla', 'chocolate sauce'], ['chocolate', 'chocolate sauce']]
